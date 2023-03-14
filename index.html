@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/index.css" />
+    <script src="./src/js/index.js" type="module" defer></script>
+    <title>Simple Framework</title>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <h3>Title</h3>
+      <div
+        id="gatherPersonalDetails"
+        data-mod="personalDetails"
+        data-classification="infoGathering"
+      >
+        <form id="personDetails">
+          <label for="">
+            First Name
+            <input
+              type="text"
+              data-dep="val1"
+              data-name="firstName"
+              data-bind="text"
+              id="firstName"
+            />
+          </label>
+          <label for="">
+            Last Name
+            <input
+              type="text"
+              id="lastName"
+              data-dep="val2"
+              data-name="lastName"
+            />
+          </label>
+          <label for="">
+            Email
+            <input type="text" id="email" data-dep="val3" data-name="email" />
+          </label>
+          <label for="">
+            Enter Details
+            <input type="button" id="enterDetails" />
+            data-name="enterDetails" />
+          </label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+      </div>
+      <div id="gatherComnpanyDetails" data-mod="companyDetails">
+        <form id="personDetails">
+          <label for="">
+            Company Name
+            <input
+              type="text"
+              id="companyName"
+              data-dep="val1"
+              data-name="companyName"
+            />
+          </label>
+          <label for="">
+            Manager
+            <input
+              type="text"
+              id="manager"
+              data-dep="val2"
+              data-name="manager"
+            />
+          </label>
+          <label for="">
+            Manager Email
+            <input
+              type="text"
+              id="managerEmail"
+              data-dep="val3"
+              data-name="managerEmail"
+            />
+          </label>
+          <label for="">
+            Enter Details
+            <input type="button" data-dep="val4" data-name="enterDetails" />
+          </label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

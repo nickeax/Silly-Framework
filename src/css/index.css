@@ -1,0 +1,20 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+input {
+  padding: 0.7rem;
+  background-color: #056321;
+  border: 1px solid #9f5801;
+}
+
+input:hover {
+  background: linear-gradient(
+    rgba(255, 255, 255, 0.02) 0%,
+    rgba(255, 255, 255, 0.02) 100%
+  );
+}
